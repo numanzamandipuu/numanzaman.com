@@ -4,4 +4,226 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 <BaseLayout title="Portfolio">
 
+    
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title">
+      <div class="breadcrumbs">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/"><i class="bi bi-house"></i> Home</a></li>
+            <!-- <li class="breadcrumb-item"><a href="#">Category</a></li> -->
+            <li class="breadcrumb-item active current">Portfolio</li>
+          </ol>
+        </nav>
+      </div>
+
+      <div class="title-wrapper">
+        <h1>Portfolio</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+      </div>
+    </div><!-- End Page Title -->
+
+    
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title">
+        <h2>Portfolio</h2>
+        <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div>
+        <p>Selected mechanical engineering projects including system-level assemblies, structural designs, and manufacturing-ready CAD models.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter=".filter-all" data-layout="masonry" data-sort="original-order">
+
+          <!-- <div class="portfolio-filters-container">
+            <ul class="portfolio-filters isotope-filters">
+              <li data-filter="*" class="filter-active">All Work</li>
+              <li data-filter=".filter-web">Web Design</li>
+              <li data-filter=".filter-graphics">Graphics</li>
+              <li data-filter=".filter-motion">Motion</li>
+              <li data-filter=".filter-brand">Branding</li>
+            </ul>
+          </div> -->
+
+          <div class="portfolio-filters-container">
+            <ul class="portfolio-filters isotope-filters">
+              <li data-filter=".filter-all" class="filter-active">All</li>
+              <li data-filter=".filter-independent">Independent</li>
+              <li data-filter=".filter-client">Client</li>
+            </ul>
+          </div>
+
+          <div class="row g-4 isotope-container">
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-all filter-independent">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/37.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="/assets/img/portfolio/37.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
+                      <a href="/portfolio-details" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Independent Work</span>
+                  <a href="/portfolio-details"><h3>Mercedes-AMG Formula 1 Car</h3></a>
+                  <p>Dimensionally accurate reconstruction of a Formula-1 car developed as a full SolidWorks vehicle assembly.</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-all filter-client">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/40.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="/assets/img/portfolio/40.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i></a>
+                      <a href="/portfolio-details" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Client Work</span>
+                  <a href="/portfolio-details"><h3>STL Model Optimization</h3></a>
+                  <p>A detailed scale model of the Beit Hamikdash was built and optimized from complex STL geometry for manufacturable 3D printing.</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-all filter-independent">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/38.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="/assets/img/portfolio/38.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-motion"><i class="bi bi-eye"></i></a>
+                      <a href="/portfolio-details" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Independent Work</span>
+                  <a href="/portfolio-details"><h3>Fixed-Wing UAV Structural Airframe</h3></a>
+                  <p>Structural UAV airframe designed for lightweight flight performance and modular construction.</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-all filter-independent">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/42.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="/assets/img/portfolio/42.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-brand"><i class="bi bi-eye"></i></a>
+                      <a href="/portfolio-details" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Independent Work</span>
+                  <a href="/portfolio-details"><h3>Collapsible Metal Ramp</h3></a>
+                  <p>Foldable ramp system was created with technical drawing for structural stability under operational loads.</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-independent">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/41.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="/assets/img/portfolio/41.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
+                      <a href="/portfolio-details" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Independent Work</span>
+                  <a href="/portfolio-details"><h3>Industrial Steel Staircase</h3></a>
+                  <p>Industrial staircase was designed using sheet metal and weldment features in SolidWorks for fabrication-ready structural assembly.</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-client">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/44.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="/assets/img/portfolio/44.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i></a>
+                      <a href="/portfolio-details" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Client Work</span>
+                  <a href="/portfolio-details"><h3>1979 Ford Pickup</h3></a>
+                  <p>Classic pickup truck geometry reconstructed into a detailed parametric CAD model, optimized for 3D Printing.</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-client">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/43.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="/assets/img/portfolio/43.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i></a>
+                      <a href="/portfolio-details" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Client Work</span>
+                  <a href="/portfolio-details"><h3>3D Terrain & Contour Map</h3></a>
+                  <p>Topographic terrain converted into a detailed 3D CAD model using contour elevation data.</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-client">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/39.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="/assets/img/portfolio/39.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i></a>
+                      <a href="/portfolio-details" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Client Work</span>
+                  <a href="/portfolio-details"><h3>Formula 1 Inspired Incense Burner</h3></a>
+                  <p>Consumer incense burner concept developed using Formula-1 inspired aerodynamic styling.</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+  </main>
+
 </BaseLayout>
