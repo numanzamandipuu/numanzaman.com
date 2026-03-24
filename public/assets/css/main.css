@@ -2338,3 +2338,25 @@ textarea::placeholder {
   color: var(--contrast-color);
   transform: translateY(-2px);
 }
+
+
+.cert-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.cert-box img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.cert-box h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}

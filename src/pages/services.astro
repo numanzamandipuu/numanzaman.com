@@ -5,6 +5,87 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 <BaseLayout title="Services">
 
     
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title">
+      <div class="breadcrumbs">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/"><i class="bi bi-house"></i> Home</a></li>
+            <!-- <li class="breadcrumb-item"><a href="#">Category</a></li> -->
+            <li class="breadcrumb-item active current">Services</li>
+          </ol>
+        </nav>
+      </div>
+
+      <!-- Section Title -->
+      <div class="container section-title">
+        <h2>Services</h2>
+        <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div>
+        <p>Mechanical engineering and SolidWorks CAD services focused on production-ready designs, system-level assemblies, and manufacturing documentation.</p>
+      </div><!-- End Section Title -->
+    </div><!-- End Page Title -->
+
+        <!-- Services Section -->
+    <section id="services" class="services section light-background">
+
+      <div class="container">
+
+        <div class="row align-items-center">
+          <div class="col">
+            <div class="row g-4">
+
+              <div class="col-md-6">
+                <div class="service-item">
+                  <i class="bi bi-gear-wide-connected"></i>
+                  <h3><a href="/service-details" class="text-primary fw-bold">Mechanical System Design</a></h3>
+                  <p>Design of functional mechanical systems and assemblies with structural reasoning, component interfaces, and manufacturability considerations.</p>
+                </div>
+              </div><!-- End Service Item -->
+
+              <div class="col-md-6">
+                <div class="service-item">
+                  <i class="bi bi-box icon"></i>
+                  <h3><a href="/service-details" class="text-primary fw-bold">SolidWorks CAD Modeling</a></h3>
+                  <p>Parametric 3D modeling of parts and assemblies prepared for modification, analysis, and engineering workflows.</p>
+                </div>
+              </div><!-- End Service Item -->
+
+              <div class="col-md-6">
+                <div class="service-item">
+                  <i class="bi bi-file-earmark-text"></i>
+                  <h3><a href="/service-details" class="text-primary fw-bold">Engineering Drawings & Fabrication Documentation</a></h3>
+                  <p>Manufacturing-ready technical drawings and documentation for machining, fabrication, or prototyping.</p>
+                </div>
+              </div><!-- End Service Item -->
+
+              <div class="col-md-6">
+                <div class="service-item">
+                  <i class="bi bi-arrow-repeat"></i>
+                  <h3><a href="/service-details" class="text-primary fw-bold">CAD Reconstruction & Reverse Engineering</a></h3>
+                  <p>Accurate CAD model reconstruction from images, reference geometry, or scan data for engineering analysis or manufacturing.</p>
+                </div>
+              </div><!-- End Service Item -->
+
+              <div class="text-center">
+                <a href="https://wa.me/8801935088892" class="btn btn-primary mt-4 p-3" style="width: 75%; border-radius: 50px;">
+                  Get a Quote
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
     <!-- Faq Section -->
     <section id="faq" class="faq section">
 
@@ -16,7 +97,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
           </svg>
         </div>
-        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -84,5 +164,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       </div>
 
     </section><!-- /Faq Section -->
-    
+
+  </main>
+
 </BaseLayout>

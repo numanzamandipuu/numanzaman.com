@@ -4,4 +4,112 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 <BaseLayout title="Publications">
 
+    <main class="main">
+        <!-- Page Title -->
+        <div class="page-title">
+        <div class="breadcrumbs">
+            <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/"><i class="bi bi-house"></i> Home</a></li>
+                <!-- <li class="breadcrumb-item"><a href="#">Category</a></li> -->
+                <li class="breadcrumb-item active current">Publications</li>
+            </ol>
+            </nav>
+        </div>
+
+        <!-- Section Title -->
+        <div class="container section-title">
+            <h2>Publications</h2>
+            <div class="title-shape">
+            <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+                <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+            </svg>
+            </div>
+            <p>Publications include a book chapter and conference papers on CFD-based airfoil and wind turbine aerodynamics, focusing on biomimetic design and passive flow control techniques such as tubercles and Gurney flaps.</p>
+        </div><!-- End Section Title -->
+        </div><!-- End Page Title -->
+
+
+        <!-- Resume Section -->
+        <section id="resume" class="resume section light-background">
+        <div class="container">
+
+            <div class="row">
+            <div class="col-12">
+                <div class="resume-wrapper">
+                <div class="resume-block">
+                    <h2>Book Chapter</h2>
+                    <!-- <p class="lead">Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet adipiscing sem neque sed ipsum.</p> -->
+
+                    <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-left">
+                        <h4 class="company">Elsevier</h4>
+                        <span class="period">2026</span>
+                        </div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-right">
+                        <h3 class="position">Learning from Nature: Biomimetic Solutions for Improved Wind Turbine Performance</h3>
+                        <p class="description">Mim Mashrur Ahmed, Hasan Muhommad Robin, Mokarrom Ahamed Badhon, <span class="fw-bold">Numan Zaman Dipu</span>, Md Mahbub Alam, Mahadi Hasan Masud</p>
+                        <p>Status: In Production</p>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+
+                <div class="resume-block">
+                    <h2>Conference Paper</h2>
+                    <!-- <p class="lead">Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet adipiscing.</p> -->
+
+                    <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-left">
+                        <h4 class="company">ICMERE 2025</h4>
+                        <span class="period">2025</span>
+                        </div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-right">
+                        <h3 class="position">Numerical Investigation of Airfoil Performance with Tubercles and Gurney Flaps Using Mesh-Independent CFD Simulations</h3>
+                        <p class="description"><span class="fw-bold">Numan Zaman Dipu</span>, Mokarrom Ahamed Badhon, Nusrat Nawar Ahsan, Mst. Nusrat Akther, Zannatul Mim</p>
+                        <p>DOI: <a href="https://www.researchgate.net/publication/402513337_Numerical_Investigation_of_Airfoil_Performance_with_Tubercles_and_Gurney_Flaps_Using_Mesh-Independent_CFD_Simulations">10.5281/zenodo.19064111</a></p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-left">
+                        <h4 class="company">ICERIE 2025</h4>
+                        <span class="period">2025</span>
+                        </div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-right">
+                        <h3 class="position">Biomimetics in Wind Turbine Blade Designs: A Review from Aerodynamic Perspective</h3>
+                        <p class="description"><span class="fw-bold">Numan Zaman Dipu</span>, Mokarrom Ahamed Badhon, Hasan Muhommad Robin, Mim Mashrur Ahmed</p>
+                        <p>DOI: <a href="https://www.researchgate.net/publication/391482855_Biomimetics_in_wind_turbine_blade_designs_a_review_from_aerodynamic_perspective">10.5281/zenodo.17753819</a></p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-left">
+                        <h4 class="company">ICMIME 2024</h4>
+                        <span class="period">2024</span>
+                        </div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-right">
+                        <h3 class="position">A Systematic Comparison Among Different Passive Flow Control Strategies to Enhance the Aerodynamic Performance of Wind Turbines</h3>
+                        <p class="description">Mokarrom Ahamed Badhon, <span class="fw-bold">Numan Zaman Dipu</span>, Mim Mashrur Ahmed</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+
+        </div>
+
+        </section><!-- /Resume Section -->
+
+    </main>
+
 </BaseLayout>
