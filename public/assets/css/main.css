@@ -1936,12 +1936,12 @@ section,
 }
 
 .service-details .related-services .service-item h5 a {
-  color: var(--heading-color);
+  color: var(--accent-color);
   transition: 0.3s;
 }
 
 .service-details .related-services .service-item h5 a:hover {
-  color: var(--accent-color);
+  color: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
 .service-details .related-services .service-item p {
