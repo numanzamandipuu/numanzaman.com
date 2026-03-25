@@ -4,5 +4,107 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 <BaseLayout title="Contact">
 
+    <main class="main">
+        <!-- Page Title -->
+        <div class="page-title">
+        <div class="breadcrumbs">
+            <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/"><i class="bi bi-house"></i> Home</a></li>
+                <!-- <li class="breadcrumb-item"><a href="#">Category</a></li> -->
+                <li class="breadcrumb-item active current">Contact</li>
+            </ol>
+            </nav>
+        </div>
+
+        <!-- Section Title -->
+        <div class="container section-title">
+            <h2>Contact</h2>
+            <div class="title-shape">
+            <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+                <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+            </svg>
+            </div>
+        </div><!-- End Section Title -->
+        </div><!-- End Page Title -->
+
+
+        
+    <!-- Contact Section -->
+    <section id="contact" class="contact section light-background">
+
+      <div class="container">
+
+        <div class="row g-5">
+          <div class="col-lg-6">
+            <div class="content">
+              <div class="section-category mb-3">Contact</div>
+              <h2 class="display-5 mb-4">Discuss Your Mechanical Design Project</h2>
+              <p class="lead mb-4">I work on production-ready mechanical systems, CAD assemblies, and engineering design projects. Reach out for system design, SolidWorks modeling, fabrication drawings, or reverse engineering work.</p>
+
+              <div class="contact-info mt-5">
+                <div class="info-item d-flex mb-3">
+                  <i class="bi bi-envelope-at me-3"></i>
+                  <span><a href="mailto:numanzamandipuu@gmail.com">numanzamandipuu@gmail.com</a></span>
+                </div>
+
+                <div class="info-item d-flex mb-3">
+                  <i class="bi bi-whatsapp me-3"></i>
+                  <span><a href="https://wa.me/8801935088892" target="_blank" rel="noopener noreferrer">+880 19350 88892</a></span>
+                </div>
+
+                <div class="info-item d-flex mb-4">
+                  <i class="bi bi-geo-alt me-3"></i>
+                  <span><a href="https://maps.app.goo.gl/aYJKQiwzq17TbB1S7" target="_blank" rel="noopener noreferrer">Rajshahi, Bangladesh</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="contact-form card">
+              <div class="card-body p-4 p-lg-5">
+
+                <form action="https://formspree.io/f/mnjgwqqe" method="post" class="php-email-form">
+                  <div class="row gy-4">
+
+                    <div class="col-12">
+                      <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                    </div>
+
+                    <div class="col-12 ">
+                      <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                    </div>
+
+                    <div class="col-12">
+                      <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                    </div>
+
+                    <div class="col-12">
+                      <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                    </div>
+
+                    <div class="col-12 text-center">
+                      <div class="loading">Loading</div>
+                      <div class="error-message"></div>
+                      <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                      <button type="submit" class="btn btn-submit w-100">Submit Message</button>
+                    </div>
+
+                  </div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+    </main>
 
 </BaseLayout>
