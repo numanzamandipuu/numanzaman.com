@@ -1,6 +1,8 @@
 ---
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
+import SpeedInsights from "@vercel/speed-insights/astro";
+import Analytics from '@vercel/analytics/astro';
 const { title = "Numan Zaman Dipu" } = Astro.props;
 ---
 
@@ -101,6 +103,12 @@ const { title = "Numan Zaman Dipu" } = Astro.props;
 
   <!-- Main CSS File -->
   <link href="/assets/css/main.css" rel="stylesheet">
+
+  <!-- Vercel Speed Insights -->
+  <SpeedInsights />
+  
+  <!-- Vercel Web Analytics -->
+  <Analytics />
 </head>
 
 <body>
