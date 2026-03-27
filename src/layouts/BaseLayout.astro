@@ -19,7 +19,7 @@ const { title = "Numan Zaman Dipu" } = Astro.props;
   <link rel="canonical" href="https://numanzaman.com/" />
 
 
-  <script type="application/ld+json">
+<script type="application/ld+json" is:inline>
 {
   "@context": "https://schema.org",
   "@type": "Person",
@@ -27,36 +27,27 @@ const { title = "Numan Zaman Dipu" } = Astro.props;
   "name": "Numan Zaman Dipu",
   "url": "https://numanzaman.com",
   "image": "https://numanzaman.com/assets/img/hero-img.jpg",
-
-  "sameAs": [
-    "https://www.linkedin.com/in/numanzamandipuu/",
-    "https://www.researchgate.net/profile/Numan-Zaman-Dipu",
-    "https://scholar.google.com/citations?user=snKFewUAAAAJ&hl=en",
-    "https://github.com/numanzamandipuu",
-    "https://www.upwork.com/freelancers/numanzamandipuu",
-    "https://www.facebook.com/numanzamandipu",
-    "https://www.youtube.com/@numanzamandipuu",
-    "https://www.instagram.com/numanzamandipuu"
-  ],
-
+  "email": "numanzamandipuu@gmail.com",
   "jobTitle": "Mechanical Engineer, Researcher, and Computational Design Specialist",
-
+  "description": "Mechanical engineer and researcher specializing in production-ready mechanical system design, CAD-based engineering workflows, and computational analysis. Focused on manufacturable structural systems, UAV airframes, and CFD-driven aerodynamic optimization using SolidWorks, MATLAB, and simulation tools.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Dhaka",
+    "addressCountry": "BD"
+  },
+  "nationality": {
+    "@type": "Country",
+    "name": "Bangladesh"
+  },
   "worksFor": {
     "@type": "Organization",
     "name": "Independent Mechanical Engineering Practice"
   },
-
   "alumniOf": {
     "@type": "CollegeOrUniversity",
     "name": "Rajshahi University of Engineering & Technology"
   },
-
-  "email": "mailto:numanzamandipuu@gmail.com",
-
   "knowsLanguage": ["English", "Bengali"],
-
-  "description": "Mechanical engineer and researcher specializing in production-ready mechanical system design, CAD-based engineering workflows, and computational analysis. Focused on manufacturable structural systems, UAV airframes, and CFD-driven aerodynamic optimization using SolidWorks, MATLAB, and simulation tools.",
-
   "knowsAbout": [
     "Mechanical Engineering",
     "SolidWorks CAD",
@@ -69,7 +60,6 @@ const { title = "Numan Zaman Dipu" } = Astro.props;
     "Design for Manufacturing",
     "Structural Design"
   ],
-
   "hasOccupation": {
     "@type": "Occupation",
     "name": "Mechanical Engineer",
@@ -80,7 +70,16 @@ const { title = "Numan Zaman Dipu" } = Astro.props;
       "Design Optimization"
     ]
   },
-
+  "sameAs": [
+    "https://www.linkedin.com/in/numanzamandipuu/",
+    "https://www.researchgate.net/profile/Numan-Zaman-Dipu",
+    "https://scholar.google.com/citations?user=snKFewUAAAAJ&hl=en",
+    "https://github.com/numanzamandipuu",
+    "https://www.upwork.com/freelancers/numanzamandipuu",
+    "https://www.facebook.com/numanzamandipu",
+    "https://www.youtube.com/@numanzamandipuu",
+    "https://www.instagram.com/numanzamandipuu"
+  ],
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://numanzaman.com",
